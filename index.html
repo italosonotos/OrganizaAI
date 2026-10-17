@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Finanças</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="login">
+  <h1>Finanças</h1>
+  <input id="email" type="email" placeholder="E-mail" autocomplete="email">
+  <input id="senha" type="password" placeholder="Senha" autocomplete="current-password">
+  <button class="btn" id="btnEntrar">Entrar</button>
+  <button class="btn ghost" id="btnCriar">Criar conta</button>
+  <p id="loginMsg" class="muted"></p>
+</section>
+
+<div id="app" class="hidden">
+  <header>
+    <button class="icon" id="btnMenu" aria-label="Menu">☰</button>
+    <strong id="titulo">Visão geral</strong>
+  </header>
+  <nav id="drawer">
+    <a data-view="geral">Visão geral</a>
+    <a data-view="contas">Minhas contas</a>
+    <a data-view="dividas">Contas e dívidas</a>
+    <a data-view="perfil">Perfil e rendas fixas</a>
+  </nav>
+  <div id="scrim"></div>
+  <main id="main"></main>
+  <button id="fab" aria-label="Adicionar">+</button>
+</div>
+
+<div id="modal" class="hidden"><form id="form"></form></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
