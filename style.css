@@ -36,7 +36,7 @@ label{display:block;margin-top:10px;font-size:13px;color:var(--mut)}
 #login{max-width:340px;margin:20vh auto;padding:0 16px}
 #login input{margin-bottom:10px}
 
-button,a,select,input[type=date],.item,.box,.icon,#fab,#scrim,[data-ent],[data-tx],[data-new],[data-m],[data-pay],[data-view]{cursor:pointer}
+button,a,select,input[type=date],.item,.box,.icon,#fab,#scrim,[data-ent],[data-tx],[data-new],[data-m],[data-tog],[data-gtog],[data-view]{cursor:pointer}
 .boxes{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px;margin-bottom:12px}
 .box{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:10px;justify-content:space-between;transition:border-color .15s}
 .box:hover{border-color:#3a3f4b}
@@ -51,3 +51,22 @@ button,a,select,input[type=date],.item,.box,.icon,#fab,#scrim,[data-ent],[data-t
 
 .grp{margin-bottom:18px}.grp>.row{margin-bottom:8px}
 .three{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.three .btn{margin-top:0;padding:11px 6px;font-size:14px}
+
+.box.part{border-top-color:#60A5FA}.box.part .st{color:#60A5FA}.box.part .dot{background:#60A5FA}
+.acts{display:flex;gap:6px}.acts .btn{flex:1;margin:0}
+.two{display:grid;grid-template-columns:2fr 1fr;gap:8px}.two .btn{margin-top:0;padding:11px 6px;font-size:14px}
+
+.groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px;margin-bottom:12px}
+.gc{justify-content:flex-start;gap:8px}
+.grow{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.grow .gn{flex:1;min-width:0}.grow>span:last-child{white-space:nowrap}
+.sp{width:20px;flex:none}
+.ck{flex:none;width:20px;height:20px;border-radius:50%;border:2px solid var(--mut);background:none;color:#0F1115;font-size:12px;font-weight:700;line-height:1;padding:0}
+.ck.on{background:var(--green);border-color:var(--green)}
+.gtot{padding-top:2px;font-weight:700}
+.grow,.ck{cursor:pointer}.grow:hover{background:#ffffff08}
+
+.ck.lg{width:24px;height:24px;font-size:14px}
+.hd{display:flex;align-items:center;gap:10px}
+.grow.pd .gn,.grow.pd>span:last-child{opacity:.5}
+.ck:hover{border-color:var(--green)}
